@@ -1,16 +1,16 @@
 :root {
-  --ground: #E8EEEC;
-  --ground-2: #DCE5E2;
-  --ink: #10202B;
-  --ink-2: #3B4D58;
-  --rule: #9FB0B5;
-  --contour: #A24520;
-  --water: #1F5F8B;
-  --forest: #2F6B4A;
+  --ground: #EAF0F2;
+  --ground-2: #DDE7EB;
+  --ink: #0B2545;
+  --ink-2: #3A4F66;
+  --rule: #9DB0BC;
+  --contour: #007C91;
+  --water: #0B2545;
+  --forest: #007C91;
   --on-contour: #FFFFFF;
-  --contour-line: rgba(162, 69, 32, .55);
-  --contour-index: rgba(162, 69, 32, .95);
-  --minor-line: rgba(31, 95, 139, .32);
+  --contour-line: rgba(0, 124, 145, .5);
+  --contour-index: rgba(0, 124, 145, .95);
+  --minor-line: rgba(11, 37, 69, .2);
   --f-head: "Barlow Condensed", "Arial Narrow", sans-serif;
   --f-body: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
   --gutter: clamp(16px, 4vw, 48px);
@@ -19,18 +19,18 @@
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --ground: #0E1A21;
-    --ground-2: #14242D;
-    --ink: #E6EEEA;
-    --ink-2: #A9BCC2;
-    --rule: #3A5058;
-    --contour: #E58A5B;
-    --water: #6FB3DD;
-    --forest: #6FC397;
-    --on-contour: #0E1A21;
-    --contour-line: rgba(229, 138, 91, .5);
-    --contour-index: rgba(229, 138, 91, .95);
-    --minor-line: rgba(111, 179, 221, .3);
+    --ground: #08172B;
+    --ground-2: #0F2540;
+    --ink: #E8F0F2;
+    --ink-2: #A9BCC8;
+    --rule: #2F4A66;
+    --contour: #3CC4D8;
+    --water: #9CC0E4;
+    --forest: #3CC4D8;
+    --on-contour: #08172B;
+    --contour-line: rgba(60, 196, 216, .45);
+    --contour-index: rgba(60, 196, 216, .95);
+    --minor-line: rgba(156, 192, 228, .25);
   }
 }
 
@@ -62,11 +62,8 @@ p { margin: 0; text-wrap: pretty; }
   background: color-mix(in srgb, var(--ground) 94%, transparent);
   border-bottom: 1px solid var(--rule);
 }
-.mark { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); min-height: 44px; }
-.mark-glyph { width: 30px; height: 30px; color: var(--contour); }
-.mark-text { display: flex; flex-direction: column; line-height: 1; }
-.mark-text b { font: 700 1.4rem/1 var(--f-head); letter-spacing: .08em; }
-.mark-text i { font: 500 .78rem/1.2 var(--f-head); letter-spacing: .14em; text-transform: uppercase; font-style: normal; color: var(--ink-2); margin-top: 3px; }
+.mark { display: flex; align-items: center; min-height: 44px; }
+.mark img { height: 40px; width: auto; }
 .top nav { display: flex; gap: 2px 6px; flex-wrap: wrap; }
 .top nav a {
   font: 600 .95rem/1 var(--f-head); letter-spacing: .12em; text-transform: uppercase; text-decoration: none;
@@ -157,7 +154,7 @@ h1 { font-size: clamp(2.7rem, 7.6vw, 5.4rem); letter-spacing: -.01em; }
 .contact :focus-visible { outline-color: var(--ground); }
 
 .foot { padding: 36px var(--gutter) 48px; max-width: calc(var(--max) + 2 * var(--gutter)); margin: 0 auto; display: grid; gap: 6px; color: var(--ink-2); }
-.foot b { color: var(--ink); font: 700 1.2rem/1 var(--f-head); letter-spacing: .1em; text-transform: uppercase; }
+.foot-logo { width: min(260px, 70%); height: auto; margin-bottom: 12px; }
 .foot .fine { font-size: .9rem; margin-top: 10px; }
 
 @media (min-width: 760px) {
@@ -169,7 +166,7 @@ h1 { font-size: clamp(2.7rem, 7.6vw, 5.4rem); letter-spacing: -.01em; }
 }
 @media (max-width: 520px) {
   .top { padding-block: 6px; }
-  .mark-text b { font-size: 1.2rem; }
+  .mark img { height: 34px; }
   .top nav a { padding: 12px 7px; font-size: .86rem; letter-spacing: .08em; }
   .hero { padding-top: 132px; }
   .ticks-x, .ticks-y { top: 114px; }
