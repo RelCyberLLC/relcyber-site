@@ -63,7 +63,7 @@ p { margin: 0; text-wrap: pretty; }
   border-bottom: 1px solid var(--rule);
 }
 .mark { display: flex; align-items: center; min-height: 44px; }
-.mark img { height: 40px; width: auto; }
+.mark img { height: 46px; width: auto; }
 .top nav { display: flex; gap: 2px 6px; flex-wrap: wrap; }
 .top nav a {
   font: 600 .95rem/1 var(--f-head); letter-spacing: .12em; text-transform: uppercase; text-decoration: none;
@@ -130,12 +130,12 @@ h1 { font-size: clamp(2.7rem, 7.6vw, 5.4rem); letter-spacing: -.01em; }
 .legend li:nth-child(3n) .sym { color: var(--forest); }
 .legend h3 { font-size: clamp(1.5rem, 3vw, 2rem); letter-spacing: .005em; }
 .legend p { margin-top: 10px; max-width: 70ch; }
-.legend .refs { font: 600 1rem/1.4 var(--f-head); letter-spacing: .06em; color: var(--ink-2); margin-top: 14px; }
+.legend .refs { font: 600 1rem/1.4 var(--f-head); letter-spacing: .03em; color: var(--ink-2); margin-top: 14px; }
 
 .cred-grid { display: grid; gap: 28px; }
 .cred-group h3 { font-size: 1.35rem; letter-spacing: .04em; text-transform: uppercase; color: var(--ink-2); margin-bottom: 12px; }
 .chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
-.chips li { font: 600 1.15rem/1.2 var(--f-head); letter-spacing: .08em; padding: 11px 16px; border: 1px solid var(--ink); background: var(--ground); }
+.chips li { font: 600 1.15rem/1.35 var(--f-head); letter-spacing: .04em; padding: 11px 16px; border: 1px solid var(--ink); background: var(--ground); }
 
 .who { display: grid; gap: 36px; }
 .who-copy { display: grid; gap: 18px; max-width: 68ch; font-size: 1.125rem; }
@@ -167,7 +167,7 @@ h1 { font-size: clamp(2.7rem, 7.6vw, 5.4rem); letter-spacing: -.01em; }
 @media (max-width: 520px) {
   .top { padding-block: 6px; }
   .mark img { height: 34px; }
-  .top nav a { padding: 12px 7px; font-size: .86rem; letter-spacing: .08em; }
+  .top nav a { padding: 12px 7px; font-size: .86rem; letter-spacing: .05em; }
   .hero { padding-top: 132px; }
   .ticks-x, .ticks-y { top: 114px; }
   .btn { width: 100%; font-size: 1.02rem; letter-spacing: .05em; padding-inline: 12px; }
