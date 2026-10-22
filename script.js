@@ -2,14 +2,6 @@
   var yr = document.getElementById('yr');
   if (yr) yr.textContent = new Date().getFullYear();
 
-  var cap = document.getElementById('capstmt');
-  if (cap && window.fetch) {
-    fetch(cap.getAttribute('href'), { method: 'HEAD' }).then(function (r) {
-      var type = r.headers.get('content-type') || '';
-      if (r.ok && type.indexOf('pdf') !== -1) cap.hidden = false;
-    }).catch(function () {});
-  }
-
   var canvas = document.getElementById('terrain');
   if (!canvas || !canvas.getContext) return;
   var ctx = canvas.getContext('2d');
